@@ -13,8 +13,12 @@ struct BuisnessQuizFragment : View {
     
     @State var countAnswer: Int = 0
     @State private var randomNumber = Int.random(in: 0...100)
+    @State private var isCanNav = false
+    
     
     var body: some View {
+        
+        
         NavigationView(content: {
             ScrollView {
                 Text("Ankete katılın ve bir iş kurmak için ne kadar hazır olduğunuzu öğrenin. ")
@@ -23,14 +27,14 @@ struct BuisnessQuizFragment : View {
                 ForEach(0..<10) { item in
                     QuizItem(model: allBuisnessQuiz[item]) {
                         countAnswer+=1
+                        
                     }
                 }
                 NavigationLink(
+                    isActive: .constant(countAnswer == 10),
                     destination: {
+                        FinishFragment(progress: randomNumber)
                         
-                        if countAnswer == 10 {
-                            FinishFragment(progress: randomNumber)
-                        }
                     },
                     label: {
                         Text("Sonuçlandırın")
@@ -41,11 +45,13 @@ struct BuisnessQuizFragment : View {
                     })
                 
                 
+                
+                
             }
             .frame(minWidth: 0, maxWidth: .infinity)
             
         })
         .navigationBarBackButtonHidden(true)
-        .navigationBarTitle("Bziness")
+        .navigationBarTitle("İş Dünyası")
     }
 }

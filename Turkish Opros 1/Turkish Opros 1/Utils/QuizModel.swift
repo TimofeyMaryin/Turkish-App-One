@@ -90,7 +90,7 @@ struct QuizItem : View {
         }
         .frame(width: 300, height: 300)
         .background(Color.gray.opacity(0.4))
-        .cornerRadius(15)
-        .padding([.vertical], 20)
+        .cornerRadius(5)
+        .padding([.vertical], 5)
     }
 }

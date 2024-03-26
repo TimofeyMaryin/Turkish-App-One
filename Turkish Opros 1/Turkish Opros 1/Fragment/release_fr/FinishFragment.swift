@@ -19,41 +19,47 @@ struct FinishFragment : View {
     
     var body: some View {
         NavigationView(content: {
-            VStack(alignment: .leading,content: {
-                Spacer()
-                Text("Sonucunuz: \(progress)%")
-                    .font(.title)
-                    .bold()
-                
-                Spacer().frame(height: height)
-                
-                // Spacer().frame(height: 100)
-                Text("Testten keyif aldınız mı?")
-                    .font(.title3)
-                    .fontWeight(.semibold)
-                
-                Spacer().frame(height: height)
-                
-                // Spacer().frame(height: 30)
-                Text("Düğmeye basmak sizi otomatik olarak ana ekrana götürecektir. ")
-                    .font(.caption)
-                    .foregroundColor(.white.opacity(0.5))
-                
-                Spacer().frame(height: height)
-                
-                HStack(content: {
-                    Button("Evet") {
-                        showAlert = true
-                    }
-                    Button("Hayır") {
-                        showAlert = true
-                    }
-                    
-                })
-                .buttonStyle(.bordered)
-                Spacer()
-            })
+
             
+            GeometryReader(content: { geometry in
+                VStack(alignment: .center,content: {
+                    VStack(alignment: .center, content: {
+                        Spacer()
+                        Image("trophy-prize-medal-svgrepo-com")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(height: 200)
+                        
+                        Spacer()
+                        Text("Sonucunuz: \(progress)%")
+                            .foregroundColor(.white)
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("Testten keyif aldınız mı?")
+                            .font(.title3)
+                            .fontWeight(.semibold)
+                        
+                        HStack(content: {
+                            Button("Evet") {
+                                showAlert = true
+                            }
+                            Button("Hayır") {
+                                showAlert = true
+                            }
+                            
+                        })
+                        Spacer()
+                        
+                    })
+                    .frame(width: geometry.size.width * 0.9, height: geometry.size.height * 0.9)
+                    .background(Color.gray.opacity(0.2))
+                    .cornerRadius(10)
+                })
+                .frame(width: geometry.size.width, height: geometry.size.height)
+                
+            })
             .navigationTitle("Tebrikler!!!")
             .alert("Değerlendirme için teşekkürler!", isPresented: $showAlert, actions: {Button("OK", role: .cancel) { }})
         })

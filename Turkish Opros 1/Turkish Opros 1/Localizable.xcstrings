@@ -30,9 +30,6 @@
     "Bir sonraki anketiniz için bir konu seçin!" : {
 
     },
-    "Bziness" : {
-
-    },
     "compleate_test_btn_test" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -58,9 +55,6 @@
     "Değerlendirme için teşekkürler!" : {
 
     },
-    "Düğmeye basmak sizi otomatik olarak ana ekrana götürecektir. " : {
-
-    },
     "Evet" : {
 
     },
@@ -78,16 +72,28 @@
     "Finans" : {
 
     },
+    "Got it" : {
+
+    },
     "Hayır" : {
 
     },
     "İş Dünyası" : {
 
     },
+    "Karta tıklayın ve testi yapmaya başlayın!" : {
+
+    },
     "Katılın ve geleceği etkileyin! Araştırmamız için bazı önemli soruları yanıtlayın." : {
 
     },
+    "Konu seçiminiz, finans dünyasının en önemli yönlerine odaklanmamıza ve anket katılımcılarından değerli geri bildirimler almamıza yardımcı olacaktır. Tartışma için uygun bir konu seçerek anketimizi daha odaklı ve bilgilendirici hale getirmemize yardımcı olun." : {
+
+    },
     "OK" : {
+
+    },
+    "Short Info" : {
 
     },
     "Sonuçlandırın" : {
@@ -123,6 +129,9 @@
           }
         }
       }
+    },
+    "Zorluk seviyesi" : {
+
     }
   },
   "version" : "1.0"

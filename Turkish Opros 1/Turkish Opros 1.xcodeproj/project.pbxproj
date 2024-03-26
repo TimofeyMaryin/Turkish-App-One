@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0417689A2BB1A38C00BD1458 /* SwiftUITooltip in Frameworks */ = {isa = PBXBuildFile; productRef = 041768992BB1A38C00BD1458 /* SwiftUITooltip */; };
 		04AE0C502BA047B90001523C /* Turkish_Opros_1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE0C4F2BA047B90001523C /* Turkish_Opros_1App.swift */; };
 		04AE0C522BA047B90001523C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE0C512BA047B90001523C /* ContentView.swift */; };
 		04AE0C542BA047BB0001523C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04AE0C532BA047BB0001523C /* Assets.xcassets */; };
@@ -67,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0417689A2BB1A38C00BD1458 /* SwiftUITooltip in Frameworks */,
 				04FBE2BF2BA98F9E00FA61CC /* OneSignalInAppMessages in Frameworks */,
 				04FBE2BD2BA98F9E00FA61CC /* OneSignalFramework in Frameworks */,
 				04FBE2A72BA8C45600FA61CC /* AppsFlyerLib in Frameworks */,
@@ -178,6 +180,7 @@
 				04FBE2A62BA8C45600FA61CC /* AppsFlyerLib */,
 				04FBE2BC2BA98F9E00FA61CC /* OneSignalFramework */,
 				04FBE2BE2BA98F9E00FA61CC /* OneSignalInAppMessages */,
+				041768992BB1A38C00BD1458 /* SwiftUITooltip */,
 			);
 			productName = "Turkish Opros 1";
 			productReference = 04AE0C4C2BA047B90001523C /* Turkish Opros 1.app */;
@@ -210,6 +213,7 @@
 			packageReferences = (
 				04FBE2A52BA8C45600FA61CC /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
 				04FBE2B92BA98F9E00FA61CC /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */,
+				041768982BB1A38C00BD1458 /* XCRemoteSwiftPackageReference "SwiftUI-Tooltip" */,
 			);
 			productRefGroup = 04AE0C4D2BA047B90001523C /* Products */;
 			projectDirPath = "";
@@ -383,7 +387,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Turkish Opros 1/Turkish Opros 1.entitlements";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"Turkish Opros 1/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
@@ -400,7 +404,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = turkish.project.root.TpSikAnket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -421,7 +425,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Turkish Opros 1/Turkish Opros 1.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"Turkish Opros 1/Preview Content\"";
 				DEVELOPMENT_TEAM = S58AC87U9Z;
 				ENABLE_PREVIEWS = YES;
@@ -438,7 +442,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = turkish.project.root.TpSikAnket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -474,6 +478,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		041768982BB1A38C00BD1458 /* XCRemoteSwiftPackageReference "SwiftUI-Tooltip" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/quassum/SwiftUI-Tooltip.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
 		04FBE2A52BA8C45600FA61CC /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework";
@@ -493,6 +505,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		041768992BB1A38C00BD1458 /* SwiftUITooltip */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 041768982BB1A38C00BD1458 /* XCRemoteSwiftPackageReference "SwiftUI-Tooltip" */;
+			productName = SwiftUITooltip;
+		};
 		04FBE2A62BA8C45600FA61CC /* AppsFlyerLib */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 04FBE2A52BA8C45600FA61CC /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;

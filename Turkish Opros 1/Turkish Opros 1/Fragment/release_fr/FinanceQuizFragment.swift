@@ -13,6 +13,7 @@ struct FinanceQuizFragment : View {
     @State var countAnswer: Int = 0
     @State private var randomNumber = Int.random(in: 0...100)
 
+    @State private var isCanNav = false
     
     var body: some View {
         NavigationView(content: {
@@ -23,13 +24,13 @@ struct FinanceQuizFragment : View {
                 ForEach(0..<10) { item in
                     QuizItem(model: allFinanceQuiz[item]) {
                         countAnswer+=1
+                    
                     }
                 }
                 NavigationLink(
+                    isActive: .constant(countAnswer == 10),
                     destination: {
-                        if countAnswer == 10 {
-                            FinishFragment(progress: randomNumber)
-                        }
+                        FinishFragment(progress: randomNumber)
                     },
                     label: {
                         Text("Sonuçlandırın")
