@@ -9,5 +9,20 @@
 		<key>NSExtensionPrincipalClass</key>
 		<string>$(PRODUCT_MODULE_NAME).NotificationService</string>
 	</dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fbAPP-ID</string>
+			</array>
+		</dict>
+	</array>
+	<key>FacebookAppID</key>
+	<string>6479661651</string>
+	<key>FacebookClientToken</key>
+	<string>423308690286639</string>
+	<key>FacebookDisplayName</key>
+	<string>TP Şık Anket</string>
 </dict>
 </plist>
