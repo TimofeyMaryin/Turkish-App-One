@@ -38,8 +38,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         appsFlyerTracker?.appsFlyerDevKey = "FVS24b72a7nVw7ZimgMj5H"
         
         
-        appsFlyerTracker?.appleAppID = "6479641310"
+        appsFlyerTracker?.appleAppID = "6479661651" // 6479661651
         appsFlyerTracker?.isDebug = true
+        appsFlyerTracker?.start()
         
 
         if let url = launchOptions?[.url] as? URL {
